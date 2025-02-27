@@ -30,6 +30,7 @@ client.on(Events.MessageCreate, async message => {
 
   for (const match of message.content.matchAll(/```\n([\s\S]*?)\n```/g)) {
     const code = match[1];
+    console.log(code)
     const payload = { code }
 
     try {
@@ -47,7 +48,7 @@ client.on(Events.MessageCreate, async message => {
         await message.reply('I could not execute your code :c\nAre you sure that\'s valid BIRL code?');
       }
     } catch (error) {
-      console.log(error)
+      console.error(error)
       await message.reply('I could not execute your code :c\nThe BIRL API seems to be down...')
     }
   }

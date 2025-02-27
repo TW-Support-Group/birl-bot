@@ -1,5 +1,10 @@
 # birl-bot
 
+## Run locally
+
+> [!NOTE]
+> In order to run the bot you'll need access to the TOKEN.
+
 To install dependencies:
 
 ```bash
@@ -12,4 +17,14 @@ To run:
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.2.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Deploy with Docker
+
+This command will build a multiplatform image for both arm64 and amd64:
+
+```bash
+make build
+``
+
+## License
+MIT
+

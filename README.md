@@ -23,7 +23,7 @@ This command will build a multiplatform image for both arm64 and amd64:
 
 ```bash
 make build
-``
+```
 
 ## License
 MIT

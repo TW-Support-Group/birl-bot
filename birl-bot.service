@@ -1,0 +1,11 @@
+[Unit]
+Description=BIRL bot
+After=network.target
+
+[Service]
+ExecStart=/home/aloussase/birl-bot/birl-bot
+EnvironmentFile=/home/aloussase/birl-bot/var_file
+Type=simple
+
+[Install]
+WantedBy=default.target
